@@ -7,8 +7,8 @@ func bonus(sales []int) int {
 
 	for _, amount := range sales {
 		if amount > bound {
-			amount -= bound
-			result += amount * percent / 100
+			extra := amount - bound
+			result += extra * percent / 100
 		}
 	}
 
